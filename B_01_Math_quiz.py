@@ -82,22 +82,7 @@ def num_checker(question):
             print(error)
 
 
-# # ask user for difficulty mode
-# def difficulty_mode(question):
-#     while True:
-#         response = input(question).lower()
-#
-#         if response == "easy" or response == "e":
-#             return "easy"
-#         elif response == "medium" or response == "m":
-#             return "medium"
-#         elif response == "hard" or response == "h":
-#             return "hard"
-#         else:
-#             print("You did not choose a valid response")
-
 # ask user math questions
-
 def addition_operation():
     num_1 = random.randint(1, 10)
     num_2 = random.randint(1, 10)
@@ -216,6 +201,7 @@ while question_asked < num_question:
     if user_answer == "xxx":
         break
 
+    # Add the question result in the quiz history
     history_feedback = f"Question {question_asked + 1}: {feedback}"
     quiz_history.append(history_feedback)
 
